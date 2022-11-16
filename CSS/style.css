@@ -55,6 +55,7 @@ body.dark{
   min-width: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
 
 }
 
@@ -117,6 +118,8 @@ body.dark{
   display: flex;
   align-items: center;
 }
+
+
  
 header .image-text .header-text{
   display: flex;
@@ -158,6 +161,10 @@ body.dark .sidebar header .toggle{
   color: var(--text-color);
 }
 
+.sidebar .menu{
+  margin-top: 35px;
+}
+
 .sidebar .search-box{
   background-color: var(--primary-color-light);
   border-radius: 6px;
@@ -168,8 +175,12 @@ body.dark .sidebar header .toggle{
   width: 100%;
   outline: none;
   border: none;
+  font-weight: 500;
+  font-size: 16px;
   border-radius: 6px;
   background-color: var(--primary-color-light);
+  transition: var(--tran-05);
+  color: var(--text-color);
 
 }
 
@@ -275,6 +286,9 @@ body.dark .switch::before{
 
 
 .home{
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
   position: relative;
   left: 250px;
   height: 100vh;
@@ -292,4 +306,52 @@ body.dark .switch::before{
 .sidebar.close ~ .home{
  left: 88px;
   width: calc(100% - 88px);
+}
+
+
+.home-ul{
+  display: flex;
+  min-width: 200px;
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 22px;  
+}
+
+.home-list{
+  margin-left: 30px;
+}
+
+.home-a-link{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.home-a-link:hover{
+  color: var(--primary-color);
+}
+
+.log-lo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  margin-top: 0px;
+}
+
+.log-lo ul{
+  list-style-type: none;
+}
+
+.log-lo ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.log-lo .login{
+  /* background-color: red; */
+  margin-left: 10px;
+}
+
+.log-lo .logot{
+  margin-left: 200px;
 }
